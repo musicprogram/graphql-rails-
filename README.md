@@ -1,24 +1,27 @@
-# README
+# graphql
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Users
 
-Things you may want to cover:
+query{
+  users{
+    name
+    email
+    postsCount
+  }
+}  
+ 
+* User
 
-* Ruby version
+{
+  user(id:2){
+    name
+    email
+    postsCount
+    posts{
+      title
+      body
+    }
+  }
+}
 
-* System dependencies
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...

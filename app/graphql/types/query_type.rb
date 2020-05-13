@@ -12,7 +12,7 @@ module Types
     end
 
     def user(id:)
-      user.find(id)
+      User.find(id)
     end
 
   end
